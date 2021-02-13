@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.set("views", "./views");
 app.set("view engine", "ejs");
@@ -30,6 +31,6 @@ app.get("/projects", function (req, res) {
   res.render("projects");
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log("Server started on port 3000");
 });
