@@ -6,9 +6,10 @@
 
 body {
   background-color: #f4f4f4;
-  width: 100vw;
   /* font-family: "poppins", sans-serif; */
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif;. */
+  /* font-family: "Lexend Mega", sans-serif; */
+  overflow-x: hidden;
 }
 
 li,
@@ -59,14 +60,14 @@ header {
 .text h1 {
   margin-top: 10%;
   text-align: center;
-  font-size: 220px;
-  letter-spacing: 40px;
+  font-size: max(12vw - 20px);
+  letter-spacing: 25px;
   color: #b6b6b6;
 }
 
 .text p {
   text-align: center;
-  font-size: small;
+  font-size: max(0.5vw - -5px);
   letter-spacing: 2px;
 }
 
@@ -95,8 +96,9 @@ header {
 }
 
 .design img {
-  height: 800px;
-  width: 550px;
+  max-width: 100%;
+  display: block;
+  height: auto;
   box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
 
@@ -111,7 +113,7 @@ header {
 
 .design-text .temp-para {
   color: #000000;
-  font-size: 20px;
+  font-size: max(0.5vw - -10px);
 }
 
 hr {
@@ -130,8 +132,9 @@ hr {
 }
 
 .design2 img {
-  height: 800px;
-  width: 550px;
+  max-width: 100%;
+  display: block;
+  height: auto;
   box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
 
@@ -145,7 +148,7 @@ hr {
 
 .design-text2 .temp-para2 {
   color: #000000;
-  font-size: 20px;
+  font-size: max(0.5vw - -10px);
 }
 
 .design3 {
@@ -153,11 +156,15 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  /* display: block; */
+  height: auto;
 }
 
 .design3 img {
-  height: 800;
-  width: 800;
+  max-width: 100%;
+  display: block;
+  height: auto;
   box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
 
@@ -166,7 +173,7 @@ hr {
 }
 
 .text2 {
-  font-size: 200px;
+  font-size: max(10vw - -50px);
 }
 
 /* footer  */
